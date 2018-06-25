@@ -3,7 +3,7 @@ layout:     post
 title:      TCP 常见故障排查
 subtitle:   TCP Troubleshooting
 date:       2018-06-01
-author:     ms2008
+author:     qmsheng
 header-img: img/post-bg-unix-linux.jpg
 catalog:    true
 mathjax:    true
