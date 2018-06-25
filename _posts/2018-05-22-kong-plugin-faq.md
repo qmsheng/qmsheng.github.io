@@ -3,7 +3,7 @@ layout:     post
 title:      Kong 插件非官方 FAQ
 subtitle:   Unofficial FAQ
 date:       2018-05-22
-author:     ms2008
+author:     qmsheng
 header-img: img/post-bg-kongtribuitor-shirt.png
 catalog:    true
 tags:
