@@ -3,7 +3,7 @@ layout:     post
 title:      Kong 的事件和缓存
 subtitle:   Kong 集群解析
 date:       2018-06-11
-author:     ms2008
+author:     qmsheng
 header-img: img/post-bg-kongtribuitor-shirt.png
 catalog:    true
 tags:
