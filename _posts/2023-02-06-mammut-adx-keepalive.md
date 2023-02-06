@@ -66,6 +66,11 @@ b.暂不考虑此方案（考虑到成本 + 感觉治标不治本）
 
 ## 解决方案：减少redis负载 + 加redis节点
 
-## 架构逻辑如下：
 
-![](/img/in-qms/mammut-adx.jpg)
+
+## 架构升级如下：
+
+![](/img/in-qms/mammut-adx-1.jpg)
+![](/img/in-qms/mammut-adx-2.jpg)
+![](/img/in-qms/mammut-adx-3.jpg)
+
