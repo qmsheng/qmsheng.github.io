@@ -4,25 +4,29 @@ title:      ESC连接数暴涨原因分析
 subtitle:   以请求的视角窥探 猛犸 网络连接的变化
 date:       2023-02-06
 author:     qmsheng
-header-img: img/post-bg-android.png
+header-img: img/post-bg-android.jpg
 catalog:    true
 tags:
     - 猛犸
 ---
 
 ##背景
+
 我负责的某个项目，一到晚上流量大的时间段，客户反映超时严重上涨
 
-#问题排查：
+##问题排查：
+
 1.进入其中一个项目节点，查看代码是否有报错
 2.去阿里云后台查看 CPU/内存 是否满了
 3.查看阿里云其他指标维度是否异常
 
 ##问题确认：
+
 对比阿里云后台查看，超时的时间段ECS连接数暴涨
 
 
 ##问题解决思路：
+
 1.代码层面：
 a.首先想到的是，是不是nginx长链接设置的有问题
 b.排查上下游流量，是否不支持http1.1协议（ps：因为http1.0默认是不支持keepalive）
@@ -44,6 +48,7 @@ b.暂不考虑此方案（考虑到成本 + 感觉治标不治本）
 
 
 ##重点来了：使用netstat分析
+
 超时时间段：
 
 ![](/img/in-qms/mammut-adx-nerstat-estab-more.jpg)
@@ -61,6 +66,6 @@ b.暂不考虑此方案（考虑到成本 + 感觉治标不治本）
 
 解决方案：减少redis负载 + 加redis节点
 
-架构逻辑如下：
+##架构逻辑如下：
 
 ![](/img/in-qms/mammut-adx.jpg)
