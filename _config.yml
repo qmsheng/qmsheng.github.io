@@ -1,0 +1,109 @@
+# Site settings
+title: Qmsheng Blog
+SEOTitle: 牛牛C | Qmsheng Blog
+header-img: img/home-bg.jpg
+email: 627122562@qq.com
+description: "关于 Lua, OpenResty | poslua, linux, 性能, 安全, 计算机技术 | 这里是 @Qmsheng 的个人博客，与你一起发现更大的世界。"
+keyword: "poslua, Lua, LuaJIT, OpenResty, Qmsheng, Python, Golang, Linux, Web, 互联网"
+url: "https://qmsheng.github.io"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+
+
+# SNS settings
+RSS: false
+#weibo_username:    Qmsheng
+zhihu_username:     qiu-mao-sheng-66
+github_username:    Qmsheng
+twitter_username:   Qmsheng
+mail_address:       627122562@qq.com
+#facebook_username: Qmsheng
+#linkedin_username: firstname-lastname-idxxxx
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+plugins: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+disqus_username: Qmsheng
+
+# Netease setttings
+netease_comment: false
+
+
+
+# Analytics settings
+# Baidu Analytics
+# ba_track_id: [your track id]
+
+# Google Analytics
+ga_track_id: 'UA-44966783-2'            # Format: UA-xxxxxx-xx
+ga_domain: qmsheng.github.io
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "写写代码，做做架构，<br>离开世界之前，一切都是过程"
+sidebar-avatar: /img/avatar-qmsheng2.JPG      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+    {
+        title: "Qmsheng",
+        href: "http://qmsheng.github.io"
+    },{
+        title: "OpenResty",
+        href: "https://openresty.org/en/"
+    },{
+        title: "Lor",
+        href: "http://lor.sumory.com/"
+    },{
+        title: "LuaJIT",
+        href: "http://luajit.org/"
+    },{
+        title: "Python",
+        href: "https://www.python.org/"
+    },{
+        title: "Golang",
+        href: "https://golang.org/"
+    }
+]
